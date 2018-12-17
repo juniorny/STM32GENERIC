@@ -130,10 +130,12 @@ void HardwareTimerLL::setCount(uint32_t val)
 
 uint32_t HardwareTimerLL::getBaseFrequency()
 {
-	LL_RCC_ClocksTypeDef *clocks;
+	LL_RCC_ClocksTypeDef *clocks = new LL_RCC_ClocksTypeDef;
 	LL_RCC_GetSystemClocksFreq(clocks);
+	uint32_t baseFreq = 2 * clocks->PCLK1_Frequency;
+	delete clocks;
 
-	return 2 * clocks->PCLK1_Frequency;
+	return baseFreq;
 }
 
 

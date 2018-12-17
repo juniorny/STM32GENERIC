@@ -139,9 +139,9 @@ tools.nucleoFlasher.upload.pattern="{path}/{cmd}" {upload.verbose} -I "{build.pa
 # STLINK/V2 upload
 tools.stlink_upload.cmd=stlink_upload
 tools.stlink_upload.cmd.windows=stlink_upload.bat
-tools.stlink_upload.path.windows={runtime.ide.path}/hardware/tools/win
-tools.stlink_upload.path.macosx={runtime.ide.path}/hardware/tools/macosx
-tools.stlink_upload.path.linux={runtime.ide.path}/hardware/tools/linux
+tools.stlink_upload.path.windows={runtime.ide.path}/hardware/STM32GENERIC-master/tools/win
+tools.stlink_upload.path.macosx={runtime.ide.path}/hardware/STM32GENERIC-master/tools/macosx
+tools.stlink_upload.path.linux={runtime.ide.path}/hardware/STM32GENERIC-master/tools/linux
 
 tools.stlink_upload.upload.params.verbose=-d
 tools.stlink_upload.upload.params.quiet=
