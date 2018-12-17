@@ -44,6 +44,11 @@ extern "C" {
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f1xx.h"
 
+// add by @zhong
+#ifndef USE_FULL_LL_DRIVER
+#define USE_FULL_LL_DRIVER
+#endif
+
 /** @addtogroup STM32F1xx_LL_Driver
   * @{
   */

@@ -32,6 +32,12 @@
   *
   ******************************************************************************
   */
+  
+// add by @zhong
+#ifndef USE_FULL_LL_DRIVER
+#define USE_FULL_LL_DRIVER
+#endif
+  
 #if defined(USE_FULL_LL_DRIVER)
 
 /* Includes ------------------------------------------------------------------*/
